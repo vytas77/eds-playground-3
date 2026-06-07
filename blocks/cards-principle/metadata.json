@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-principle",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-06-07T18:38:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://brandcenter.walmart.com/brand/brand-foundation",
+    "originPage": "brand foundation content page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "principle-tiles",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "title + description tiles in grid",
+    "buttonCount": 0,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "brand principle or value tile grids",
+      "text-only card grids on dark backgrounds",
+      "summary tile displays with title and short description"
+    ],
+    "notSuitableFor": [
+      "cards with images",
+      "product or feature cards with CTAs",
+      "cards on light backgrounds"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/brand/brand-foundation"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-07T18:38:00.000Z"
+  }
+}

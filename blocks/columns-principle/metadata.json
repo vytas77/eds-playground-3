@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-principle",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-06-07T18:38:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://brandcenter.walmart.com/brand/brand-foundation",
+    "originPage": "brand foundation content page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "principle-detail",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + heading + description text",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "brand principle or value showcases with image and text",
+      "alternating image-text content sections",
+      "feature/benefit layouts with large imagery"
+    ],
+    "notSuitableFor": [
+      "introductory sections with CTA buttons",
+      "footer-style navigation columns",
+      "columns without images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/brand/brand-foundation"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-07T18:38:00.000Z"
+  }
+}

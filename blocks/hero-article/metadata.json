@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-article",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-07T18:38:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://brandcenter.walmart.com/brand/brand-foundation",
+    "originPage": "brand foundation content page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "page-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + parallax background image",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "content article pages with parallax hero",
+      "brand guide pages with title and background image",
+      "interior pages needing full-height hero treatment"
+    ],
+    "notSuitableFor": [
+      "homepage hero with animated elements",
+      "dark-themed hero sections",
+      "hero sections with CTA buttons"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/brand/brand-foundation"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-07T18:38:00.000Z"
+  }
+}

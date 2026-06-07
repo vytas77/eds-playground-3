@@ -242,6 +242,25 @@ main .section.dark a:any-link {
   color: #fff;
 }
 
+main .section.blue {
+  background-color: var(--link-color);
+  color: #fff;
+  padding: 80px 0;
+}
+
+main .section.blue h1,
+main .section.blue h2,
+main .section.blue h3,
+main .section.blue h4,
+main .section.blue h5,
+main .section.blue h6 {
+  color: #fff;
+}
+
+main .section.blue a:any-link {
+  color: #fff;
+}
+
 main .section.rounded {
   background-color: var(--light-color);
   border-radius: 24px;

@@ -67,6 +67,103 @@
           "defaultContent": []
         }
       ]
+    },
+    {
+      "name": "brand-foundation",
+      "urls": ["https://brandcenter.walmart.com/brand/brand-foundation"],
+      "description": "Brand guide content page with sidebar navigation, article content, and brand principles",
+      "blocks": [
+        {
+          "name": "hero-article",
+          "instances": [".brand-guide-hero"]
+        },
+        {
+          "name": "columns-principle",
+          "instances": [".columns.vertical-center.wrap-in-tablet", ".columns.vertical-center.reverse-columns-mobile.wrap-in-tablet"]
+        },
+        {
+          "name": "cards-principle",
+          "instances": [".principle-tiles"]
+        },
+        {
+          "name": "carousel-assets",
+          "instances": [".lottie-carousel"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": ".brand-guide-hero",
+          "style": null,
+          "blocks": ["hero-article"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Introduction",
+          "selector": [".brand-foundation-content-area", ".content-area-wrapper"],
+          "style": null,
+          "blocks": [],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Brand Purpose",
+          "selector": "#brand-purpose",
+          "style": "blue",
+          "blocks": [],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Company Positioning",
+          "selector": "#company-positioning",
+          "style": "blue",
+          "blocks": [],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5",
+          "name": "Brand Principles Intro",
+          "selector": "#brand-principles",
+          "style": null,
+          "blocks": [],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Brand Principles Details",
+          "selector": ".columns.vertical-center",
+          "style": null,
+          "blocks": ["columns-principle"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-7",
+          "name": "Cheat Sheet",
+          "selector": ".principle-tiles",
+          "style": "blue, rounded",
+          "blocks": ["cards-principle"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-8",
+          "name": "Explore Assets",
+          "selector": ".lottie-carousel",
+          "style": null,
+          "blocks": ["carousel-assets"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-9",
+          "name": "Footer",
+          "selector": ".footer-nav",
+          "style": "dark",
+          "blocks": [],
+          "defaultContent": []
+        }
+      ]
     }
   ]
 }
