@@ -1,0 +1,164 @@
+/*
+ * Block: columns-footer
+ * Three-column footer navigation: logo+CTA | nav links | quick links
+ * Designed for .section.dark (dark navy background, white text)
+ */
+
+.columns-footer {
+  padding: 0;
+}
+
+.columns-footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.columns-footer > div > div {
+  order: 1;
+}
+
+.columns-footer h3 {
+  font-size: var(--heading-size-l);
+  font-weight: 300;
+  font-family: var(--body-font-family);
+  line-height: 48px;
+  color: #fff;
+  margin: 8px 0;
+}
+
+/* --- Columns 2 and 3: Link lists --- */
+.columns-footer > div > div:nth-child(2),
+.columns-footer > div > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.columns-footer > div > div:nth-child(2) p,
+.columns-footer > div > div:nth-child(3) p {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.columns-footer > div > div:nth-child(2) a,
+.columns-footer > div > div:nth-child(3) a {
+  color: #a9ddf7;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 13.8px;
+  text-decoration: none;
+  display: block;
+}
+
+.columns-footer > div > div:nth-child(2) a:hover,
+.columns-footer > div > div:nth-child(3) a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* --- Column 1: Logo + heading + download button --- */
+.columns-footer > div > div:first-child {
+  order: 0;
+}
+
+.columns-footer > div > div:first-child p:first-child {
+  margin: 0;
+}
+
+.columns-footer > div > div:first-child picture {
+  display: inline-block;
+}
+
+.columns-footer > div > div:first-child img {
+  width: 38px;
+  height: 42px;
+}
+
+.columns-footer > div > div:first-child p:last-child {
+  margin: 8px 0 0;
+}
+
+.columns-footer > div > div:first-child p:last-child a {
+  background-color: #4dbdf5;
+  color: #001e60;
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--button-radius);
+  font-size: var(--body-font-size-s);
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1.25;
+}
+
+.columns-footer > div > div:first-child p:last-child a:hover {
+  background-color: #7acef8;
+  color: #001e60;
+  text-decoration: none;
+}
+
+/* Override EDS button styles for the download button */
+main .columns-footer a.button:any-link {
+  background-color: #4dbdf5;
+  color: #001e60;
+  padding: 12px 24px;
+  border: none;
+  border-radius: var(--button-radius);
+  font-size: var(--body-font-size-s);
+  font-weight: 400;
+  display: inline-block;
+  text-decoration: none;
+}
+
+main .columns-footer a.button:any-link:hover {
+  background-color: #7acef8;
+  color: #001e60;
+  text-decoration: none;
+}
+
+/* Override EDS button styles for nav links in columns 2 and 3 */
+main .columns-footer > div > div:nth-child(2) a.button:any-link,
+main .columns-footer > div > div:nth-child(3) a.button:any-link {
+  background-color: transparent;
+  color: #a9ddf7;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 13.8px;
+  white-space: normal;
+}
+
+main .columns-footer > div > div:nth-child(2) a.button:any-link:hover,
+main .columns-footer > div > div:nth-child(3) a.button:any-link:hover {
+  background-color: transparent;
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* --- Desktop layout --- */
+@media (width >= 900px) {
+  .columns-footer > div {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 28px;
+  }
+
+  .columns-footer > div > div {
+    order: unset;
+  }
+
+  .columns-footer > div > div:first-child {
+    flex: 2;
+  }
+
+  .columns-footer > div > div:nth-child(2),
+  .columns-footer > div > div:nth-child(3) {
+    flex: 1;
+    padding-left: 28px;
+  }
+}

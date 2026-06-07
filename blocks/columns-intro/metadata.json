@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-intro",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-06-07T16:32:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://brandcenter.walmart.com/",
+    "originPage": "Walmart Brand Center homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "intro",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "heading | text + CTA",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "introductory content sections",
+      "pages with heading on left and descriptive text on right",
+      "brand messaging with call-to-action"
+    ],
+    "notSuitableFor": [
+      "image-heavy layouts",
+      "multi-row column content",
+      "grid-based card layouts"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-07T16:32:00.000Z"
+  }
+}

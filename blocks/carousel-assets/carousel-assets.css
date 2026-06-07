@@ -1,0 +1,219 @@
+/* Block: carousel-assets
+ * Horizontally scrolling carousel of tall rounded-rectangle asset cards.
+ * Source: .lottie-carousel on brandcenter.walmart.com
+ * Extracted values: cards 365px x 502px, border-radius 31px, white bg,
+ * box-shadow rgba(0,0,0,0.05) 0px 10px 20px, nav buttons 57px circular with navy border.
+ */
+
+.carousel-assets {
+  position: relative;
+  padding-top: 72px;
+}
+
+/* Slides container */
+.carousel-assets .carousel-assets-slides-container {
+  position: static;
+}
+
+/* Navigation buttons - positioned top right of the block like source */
+.carousel-assets .carousel-assets-navigation-buttons {
+  position: absolute;
+  top: 12px;
+  right: 0;
+  left: auto;
+  transform: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 2;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.carousel-assets .carousel-assets-navigation-buttons button {
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid currentcolor;
+  border-radius: 50%;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  position: relative;
+}
+
+.carousel-assets .carousel-assets-navigation-buttons button:hover,
+.carousel-assets .carousel-assets-navigation-buttons button:focus-visible {
+  background-color: rgb(255 255 255 / 10%);
+}
+
+.carousel-assets .carousel-assets-navigation-buttons button::after {
+  display: block;
+  content: '';
+  border: 2px solid currentcolor;
+  border-bottom: 0;
+  border-left: 0;
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 2px);
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.carousel-assets .carousel-assets-navigation-buttons button.slide-next::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+  left: calc(50% - 2px);
+}
+
+/* Slides list - horizontal scroll */
+.carousel-assets .carousel-assets-slides,
+.carousel-assets .carousel-assets-slide-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-assets .carousel-assets-slides {
+  display: flex;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow: auto hidden;
+  gap: 24px;
+  padding: 8px 0;
+}
+
+.carousel-assets .carousel-assets-slides::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual slide - styled as tall rounded card */
+.carousel-assets .carousel-assets-slide {
+  flex: 0 0 260px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  min-height: 380px;
+  border-radius: 31px;
+  background-color: #fff;
+  border: 1px solid var(--heading-color);
+  box-shadow: rgb(0 0 0 / 5%) 0 10px 20px 0;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carousel-assets .carousel-assets-slide:hover {
+  transform: translateY(-4px);
+  box-shadow: rgb(0 0 0 / 10%) 0 14px 28px 0;
+}
+
+/* Slide content area */
+.carousel-assets .carousel-assets-slide .carousel-assets-slide-image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+  min-height: 380px;
+  padding: 0;
+  position: relative;
+}
+
+/* Link inside the slide - make it fill the entire card */
+.carousel-assets .carousel-assets-slide .carousel-assets-slide-image p {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+}
+
+.carousel-assets .carousel-assets-slide .carousel-assets-slide-image a {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  padding: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--body-font-family);
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--link-color);
+  border-radius: 20px;
+  margin: 8px;
+  box-sizing: border-box;
+}
+
+.carousel-assets .carousel-assets-slide .carousel-assets-slide-image a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Colored card backgrounds using nth-child for variety like source */
+.carousel-assets .carousel-assets-slide:nth-child(1) .carousel-assets-slide-image a {
+  background-color: #0053e2;
+}
+
+.carousel-assets .carousel-assets-slide:nth-child(2) .carousel-assets-slide-image a {
+  background-color: #fff;
+  color: var(--heading-color);
+}
+
+.carousel-assets .carousel-assets-slide:nth-child(3) .carousel-assets-slide-image a {
+  background-color: #0053e2;
+}
+
+.carousel-assets .carousel-assets-slide:nth-child(4) .carousel-assets-slide-image a {
+  background-color: #fff;
+  color: var(--heading-color);
+}
+
+.carousel-assets .carousel-assets-slide:nth-child(5) .carousel-assets-slide-image a {
+  background-color: #0053e2;
+}
+
+.carousel-assets .carousel-assets-slide:nth-child(6) .carousel-assets-slide-image a {
+  background-color: #fff;
+  color: var(--heading-color);
+}
+
+.carousel-assets .carousel-assets-slide:nth-child(7) .carousel-assets-slide-image a {
+  background-color: #0053e2;
+}
+
+/* Hide slide indicators - not present in source design */
+.carousel-assets .carousel-assets-slide-indicators {
+  display: none;
+}
+
+/* Desktop styles */
+@media (width >= 900px) {
+  .carousel-assets .carousel-assets-navigation-buttons button {
+    width: 57px;
+    height: 57px;
+  }
+
+  .carousel-assets .carousel-assets-slide {
+    flex: 0 0 365px;
+    min-height: 502px;
+  }
+
+  .carousel-assets .carousel-assets-slide .carousel-assets-slide-image {
+    min-height: 502px;
+  }
+
+  .carousel-assets .carousel-assets-slide .carousel-assets-slide-image p {
+    min-height: 502px;
+  }
+
+  .carousel-assets .carousel-assets-slide .carousel-assets-slide-image a {
+    min-height: 502px;
+    padding: 28px;
+    font-size: 18px;
+  }
+}

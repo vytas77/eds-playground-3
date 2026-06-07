@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-brand",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-06-07T16:32:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://brandcenter.walmart.com/",
+    "originPage": "Walmart Brand Center homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "brand-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + decorative image",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "brand landing pages",
+      "identity showcase pages",
+      "full-viewport hero sections with animated/decorative imagery"
+    ],
+    "notSuitableFor": [
+      "product pages with CTAs",
+      "text-heavy content pages",
+      "pages needing multiple hero buttons"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-07T16:32:00.000Z"
+  }
+}

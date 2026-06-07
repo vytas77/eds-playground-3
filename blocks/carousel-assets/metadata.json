@@ -1,0 +1,39 @@
+{
+  "variantName": "carousel-assets",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-06-07T16:32:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://brandcenter.walmart.com/",
+    "originPage": "Walmart Brand Center homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "asset-gallery",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "multiple animated card slides",
+    "buttonCount": 0,
+    "imageCount": 7
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "brand asset showcase galleries",
+      "dark background carousel displays",
+      "animated/interactive card rotations"
+    ],
+    "notSuitableFor": [
+      "text-heavy content carousels",
+      "light background slideshows",
+      "single-image hero banners"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-07T16:32:00.000Z"
+  }
+}

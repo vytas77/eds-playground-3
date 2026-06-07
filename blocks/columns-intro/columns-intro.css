@@ -1,0 +1,88 @@
+/* Block: columns-intro */
+
+.columns-intro > div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.columns-intro > div > div {
+  order: 1;
+}
+
+.columns-intro > div > .columns-intro-img-col {
+  order: 0;
+}
+
+.columns-intro > div > .columns-intro-img-col img {
+  display: block;
+  width: 100%;
+}
+
+.columns-intro h3 {
+  font-family: var(--heading-font-family);
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 1.2;
+  color: var(--heading-color);
+  margin: 0 0 8px;
+}
+
+.columns-intro p {
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0 0 16px;
+}
+
+.columns-intro > div > div:last-child p:last-child {
+  margin: 16px 0 0;
+}
+
+.columns-intro > div > div:last-child p:last-child a:any-link {
+  display: inline-block;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  padding: var(--button-padding);
+  border-radius: var(--button-radius);
+  font-size: var(--body-font-size-s);
+  font-weight: 400;
+  border: none;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.columns-intro > div > div:last-child p:last-child a:any-link:hover,
+.columns-intro > div > div:last-child p:last-child a:any-link:focus-visible {
+  background-color: var(--link-hover-color);
+  color: var(--button-text);
+  text-decoration: none;
+}
+
+@media (width >= 900px) {
+  .columns-intro > div {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+
+  .columns-intro > div > div {
+    order: unset;
+  }
+
+  .columns-intro > div > div:first-child {
+    width: 66.66%;
+    padding-right: 1.5%;
+  }
+
+  .columns-intro > div > div:last-child {
+    width: 33.33%;
+    padding-right: 1.5%;
+  }
+
+  .columns-intro h3 {
+    font-size: 56px;
+    line-height: 1.2;
+  }
+}

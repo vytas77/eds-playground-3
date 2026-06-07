@@ -1,0 +1,110 @@
+/* Block: hero-brand -- Full viewport hero with dark gradient background */
+
+/* Full-width wrapper override */
+.hero-brand-container .hero-brand-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+/* Remove section padding for hero */
+main > .section.hero-brand-container {
+  padding: 0;
+}
+
+.hero-brand {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 80px 24px;
+  box-sizing: border-box;
+  background-color: #001030;
+  background-image: url('https://brandcenter.walmart.com/content/dam/brand/home/homepage-hero.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-brand > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.hero-brand > div > div {
+  width: 100%;
+}
+
+.hero-brand h1 {
+  font-family: var(--heading-font-family);
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto 8px;
+  max-width: 800px;
+}
+
+.hero-brand h2,
+.hero-brand h3,
+.hero-brand h4,
+.hero-brand h5,
+.hero-brand h6 {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+}
+
+.hero-brand p {
+  color: #fff;
+  text-align: center;
+  font-family: var(--body-font-family);
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-brand a:any-link {
+  color: #fff;
+}
+
+.hero-brand picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.hero-brand img {
+  height: 144px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+@media (width >= 600px) {
+  .hero-brand img {
+    height: 260px;
+  }
+}
+
+@media (width >= 900px) {
+  .hero-brand {
+    padding: 120px 32px;
+  }
+
+  .hero-brand h1 {
+    font-size: 54px;
+    line-height: 64.8px;
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "metadata": {
+    "projectType": "da"
+  },
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": ["https://brandcenter.walmart.com/"],
+      "description": "Walmart Brand Center homepage with brand guidelines and resources",
+      "blocks": [
+        {
+          "name": "hero-brand",
+          "instances": [".brand-guide-hero"]
+        },
+        {
+          "name": "columns-intro",
+          "instances": [".columns.vertical-center.wrap-in-tablet"]
+        },
+        {
+          "name": "carousel-assets",
+          "instances": [".lottie-carousel"]
+        },
+        {
+          "name": "columns-footer",
+          "instances": [".footer-nav"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": ".brand-guide-hero",
+          "style": null,
+          "blocks": ["hero-brand"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Introduction",
+          "selector": "#container-7e900e2855",
+          "style": null,
+          "blocks": ["columns-intro"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Brand Foundation",
+          "selector": ".rounded-corner",
+          "style": "rounded",
+          "blocks": [],
+          "defaultContent": ["#additionalTextWrapper .cmp-text", "#brand-foundation-button .cmp-button"]
+        },
+        {
+          "id": "section-4",
+          "name": "Explore Assets Carousel",
+          "selector": ".lottie-carousel",
+          "style": "dark",
+          "blocks": ["carousel-assets"],
+          "defaultContent": [".carousel-header .title"]
+        },
+        {
+          "id": "section-5",
+          "name": "Download and Navigation",
+          "selector": ".footer-nav",
+          "style": "dark",
+          "blocks": ["columns-footer"],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

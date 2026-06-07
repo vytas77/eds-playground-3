@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-footer",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-06-07T16:32:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://brandcenter.walmart.com/",
+    "originPage": "Walmart Brand Center homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "compact",
+    "purpose": "footer-nav",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "logo + heading + CTA | link groups",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "footer-style download/navigation sections",
+      "dark background multi-column link layouts",
+      "asset download areas with organized navigation"
+    ],
+    "notSuitableFor": [
+      "light background content sections",
+      "image-heavy gallery layouts",
+      "text-only content columns"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-06-07T16:32:00.000Z"
+  }
+}

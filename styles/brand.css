@@ -1,0 +1,24 @@
+:root {
+  --heading-font-family: "Everyday Sans Headline", system-ui, -apple-system, sans-serif;
+  --body-font-family: "Everyday Sans", system-ui, -apple-system, sans-serif;
+  --background-color: #fff;
+  --text-color: #4f4f4f;
+  --heading-color: #001e60;
+  --link-color: #0053e2;
+  --link-hover-color: #003da8;
+  --light-color: #f5f5f5;
+  --dark-color: #001e60;
+  --button-bg: #0053e2;
+  --button-text: #fff;
+  --button-radius: 40px;
+  --button-padding: 12px 24px;
+  --section-padding: 80px 0;
+  --content-max-width: 1200px;
+  --nav-height: 64px;
+  --heading-size-xxl: 54px;
+  --heading-size-xl: 40px;
+  --heading-size-l: 40px;
+  --heading-size-m: 24px;
+  --heading-size-s: 20px;
+  --heading-size-xs: 18px;
+}
